@@ -2,6 +2,7 @@
 {
     partial class Map
     {
+        //HALLO WERELD
         /// <summary>
         /// Required designer variable.
         /// </summary>
