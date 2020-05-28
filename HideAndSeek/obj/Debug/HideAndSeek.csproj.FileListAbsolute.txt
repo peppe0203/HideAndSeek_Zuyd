@@ -9,3 +9,15 @@ C:\Users\gcoll\source\repos\HideAndSeek\HideAndSeek\obj\Debug\HideAndSeek.exe
 C:\Users\gcoll\source\repos\HideAndSeek\HideAndSeek\obj\Debug\HideAndSeek.pdb
 C:\Users\gcoll\source\repos\HideAndSeek\HideAndSeek\obj\Debug\HideAndSeek.Form1.resources
 C:\Users\gcoll\source\repos\HideAndSeek\HideAndSeek\obj\Debug\HideAndSeek.Map.resources
+C:\Github\DEV_Zuyd\HideAndSeek\bin\Debug\HideAndSeek.exe.config
+C:\Github\DEV_Zuyd\HideAndSeek\bin\Debug\HideAndSeek.exe
+C:\Github\DEV_Zuyd\HideAndSeek\bin\Debug\HideAndSeek.pdb
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.csprojAssemblyReference.cache
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.Form1.resources
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.Map.resources
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.Properties.Resources.resources
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.Settings.resources
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.csproj.GenerateResource.cache
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.csproj.CoreCompileInputs.cache
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.exe
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.pdb

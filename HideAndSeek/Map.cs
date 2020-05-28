@@ -24,5 +24,10 @@ namespace HideAndSeek
             Form1.Show();
             WindowState = FormWindowState.Normal;
         }
+
+        private void Map_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

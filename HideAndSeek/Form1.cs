@@ -33,7 +33,9 @@ namespace HideAndSeek
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            var Settings = new Settings();
+            Settings.Show();
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
