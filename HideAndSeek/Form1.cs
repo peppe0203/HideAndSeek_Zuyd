@@ -43,6 +43,11 @@ namespace HideAndSeek
 
         }
 
-        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var Play = new Play();
+            Play.Show();
+            this.Hide();
+        }
     }
 }
