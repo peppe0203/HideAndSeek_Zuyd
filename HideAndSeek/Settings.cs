@@ -12,9 +12,12 @@ namespace HideAndSeek
 {
     public partial class Settings : Form
     {
+        public static int test = 300;
+
         public Settings()
         {
             InitializeComponent();
+            textBox2.Text = test.ToString();
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -39,6 +42,7 @@ namespace HideAndSeek
         {
             string message = textBox1.Text;
             string message2 = textBox2.Text;
+            test = int.Parse(textBox2.Text);
             string title = "Message";
             MessageBox.Show(message + " Hide" + "\n" + message2 + " Search", title);
         }

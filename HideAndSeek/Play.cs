@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HideAndSeek.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace HideAndSeek
     public partial class Play : Form
     {
         private int _ticks;
+        public int test = Settings.test;
 
         public Play()
         {
@@ -35,11 +37,19 @@ namespace HideAndSeek
             _ticks++;
             textBox1.Text = _ticks.ToString();
 
-            if (_ticks == 20)
+            if (_ticks == test)
             {
                 textBox1.Text = "Done";
                 timer1.Stop();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var Form1 = new Form1();
+            Form1.Show();
+            WindowState = FormWindowState.Normal;
         }
     }
 }
