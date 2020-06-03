@@ -3225,12 +3225,15 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 20</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 445</value>
+    <value>21, 16</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>795, 561</value>
+  </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -3248,7 +3251,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>23</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3257,10 +3260,13 @@
     <value>Verdana, 19.8000011pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 60</value>
+    <value>870, 16</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 41</value>
+    <value>110, 32</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3278,7 +3284,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>22</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3287,10 +3293,13 @@
     <value>Verdana, 10.2pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>588, 128</value>
+    <value>892, 71</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 20</value>
+    <value>88, 17</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3308,7 +3317,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>21</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3317,10 +3326,13 @@
     <value>Verdana, 10.2pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>588, 166</value>
+    <value>906, 97</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 20</value>
+    <value>74, 17</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3338,7 +3350,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>20</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3347,10 +3359,13 @@
     <value>Verdana, 10.2pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>588, 202</value>
+    <value>896, 125</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 20</value>
+    <value>84, 17</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3368,7 +3383,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>19</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3377,10 +3392,13 @@
     <value>Verdana, 12pt</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 249</value>
+    <value>843, 160</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 25</value>
+    <value>137, 18</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3398,16 +3416,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>18</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 10.2pt, style=Underline</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 347</value>
+    <value>883, 226</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 29</value>
+    <value>97, 24</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3425,19 +3446,523 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ZolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ZolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 361</value>
+  </data>
+  <data name="ZolderButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 205</value>
+  </data>
+  <data name="ZolderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ZolderButton.Text" xml:space="preserve">
+    <value>Zolder</value>
+  </data>
+  <data name="&gt;&gt;ZolderButton.Name" xml:space="preserve">
+    <value>ZolderButton</value>
+  </data>
+  <data name="&gt;&gt;ZolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ZolderButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ZolderButton.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="GaskamerButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="GaskamerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GaskamerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 361</value>
+  </data>
+  <data name="GaskamerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 205</value>
+  </data>
+  <data name="GaskamerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="GaskamerButton.Text" xml:space="preserve">
+    <value>Gaskamer</value>
+  </data>
+  <data name="&gt;&gt;GaskamerButton.Name" xml:space="preserve">
+    <value>GaskamerButton</value>
+  </data>
+  <data name="&gt;&gt;GaskamerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GaskamerButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GaskamerButton.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Berging1Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Berging1Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Berging1Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>694, 361</value>
+  </data>
+  <data name="Berging1Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 87</value>
+  </data>
+  <data name="Berging1Button.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Berging1Button.Text" xml:space="preserve">
+    <value>Berging 1</value>
+  </data>
+  <data name="&gt;&gt;Berging1Button.Name" xml:space="preserve">
+    <value>Berging1Button</value>
+  </data>
+  <data name="&gt;&gt;Berging1Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Berging1Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Berging1Button.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="Berging2Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Berging2Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Berging2Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>694, 472</value>
+  </data>
+  <data name="Berging2Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 94</value>
+  </data>
+  <data name="Berging2Button.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="Berging2Button.Text" xml:space="preserve">
+    <value>Berging 2</value>
+  </data>
+  <data name="&gt;&gt;Berging2Button.Name" xml:space="preserve">
+    <value>Berging2Button</value>
+  </data>
+  <data name="&gt;&gt;Berging2Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Berging2Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Berging2Button.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ControlroomButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ControlroomButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ControlroomButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 361</value>
+  </data>
+  <data name="ControlroomButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 205</value>
+  </data>
+  <data name="ControlroomButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ControlroomButton.Text" xml:space="preserve">
+    <value>Controlroom</value>
+  </data>
+  <data name="&gt;&gt;ControlroomButton.Name" xml:space="preserve">
+    <value>ControlroomButton</value>
+  </data>
+  <data name="&gt;&gt;ControlroomButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ControlroomButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ControlroomButton.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="GarageButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="GarageButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GarageButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 240</value>
+  </data>
+  <data name="GarageButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 90</value>
+  </data>
+  <data name="GarageButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="GarageButton.Text" xml:space="preserve">
+    <value>Garage</value>
+  </data>
+  <data name="&gt;&gt;GarageButton.Name" xml:space="preserve">
+    <value>GarageButton</value>
+  </data>
+  <data name="&gt;&gt;GarageButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GarageButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GarageButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="KeukenButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="KeukenButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="KeukenButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 147</value>
+  </data>
+  <data name="KeukenButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 87</value>
+  </data>
+  <data name="KeukenButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="KeukenButton.Text" xml:space="preserve">
+    <value>Keuken</value>
+  </data>
+  <data name="&gt;&gt;KeukenButton.Name" xml:space="preserve">
+    <value>KeukenButton</value>
+  </data>
+  <data name="&gt;&gt;KeukenButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KeukenButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;KeukenButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="EetkamerButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="EetkamerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EetkamerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 27</value>
+  </data>
+  <data name="EetkamerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 105</value>
+  </data>
+  <data name="EetkamerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="EetkamerButton.Text" xml:space="preserve">
+    <value>Eetkamer</value>
+  </data>
+  <data name="&gt;&gt;EetkamerButton.Name" xml:space="preserve">
+    <value>EetkamerButton</value>
+  </data>
+  <data name="&gt;&gt;EetkamerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EetkamerButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;EetkamerButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="WoonkamerButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="WoonkamerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="WoonkamerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 28</value>
+  </data>
+  <data name="WoonkamerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 105</value>
+  </data>
+  <data name="WoonkamerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="WoonkamerButton.Text" xml:space="preserve">
+    <value>Woonkamer</value>
+  </data>
+  <data name="&gt;&gt;WoonkamerButton.Name" xml:space="preserve">
+    <value>WoonkamerButton</value>
+  </data>
+  <data name="&gt;&gt;WoonkamerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WoonkamerButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;WoonkamerButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="WcButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="WcButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="WcButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 139</value>
+  </data>
+  <data name="WcButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="WcButton.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="WcButton.Text" xml:space="preserve">
+    <value>WC</value>
+  </data>
+  <data name="&gt;&gt;WcButton.Name" xml:space="preserve">
+    <value>WcButton</value>
+  </data>
+  <data name="&gt;&gt;WcButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WcButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;WcButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="HalBenedenButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="HalBenedenButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HalBenedenButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 138</value>
+  </data>
+  <data name="HalBenedenButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 96</value>
+  </data>
+  <data name="HalBenedenButton.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="HalBenedenButton.Text" xml:space="preserve">
+    <value>Hal</value>
+  </data>
+  <data name="&gt;&gt;HalBenedenButton.Name" xml:space="preserve">
+    <value>HalBenedenButton</value>
+  </data>
+  <data name="&gt;&gt;HalBenedenButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HalBenedenButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;HalBenedenButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="HalBoven1Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="HalBoven1Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HalBoven1Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>533, 118</value>
+  </data>
+  <data name="HalBoven1Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 116</value>
+  </data>
+  <data name="HalBoven1Button.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;HalBoven1Button.Name" xml:space="preserve">
+    <value>HalBoven1Button</value>
+  </data>
+  <data name="&gt;&gt;HalBoven1Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HalBoven1Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;HalBoven1Button.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="HalBoven2Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="HalBoven2Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HalBoven2Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>548, 118</value>
+  </data>
+  <data name="HalBoven2Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 24</value>
+  </data>
+  <data name="HalBoven2Button.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="HalBoven2Button.Text" xml:space="preserve">
+    <value>Hal</value>
+  </data>
+  <data name="&gt;&gt;HalBoven2Button.Name" xml:space="preserve">
+    <value>HalBoven2Button</value>
+  </data>
+  <data name="&gt;&gt;HalBoven2Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HalBoven2Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;HalBoven2Button.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="SlaapkamerButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="SlaapkamerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SlaapkamerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>578, 147</value>
+  </data>
+  <data name="SlaapkamerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 87</value>
+  </data>
+  <data name="SlaapkamerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="SlaapkamerButton.Text" xml:space="preserve">
+    <value>Slaapkamer</value>
+  </data>
+  <data name="&gt;&gt;SlaapkamerButton.Name" xml:space="preserve">
+    <value>SlaapkamerButton</value>
+  </data>
+  <data name="&gt;&gt;SlaapkamerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SlaapkamerButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SlaapkamerButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LogeerkamerButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="LogeerkamerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LogeerkamerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>533, 28</value>
+  </data>
+  <data name="LogeerkamerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 87</value>
+  </data>
+  <data name="LogeerkamerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="LogeerkamerButton.Text" xml:space="preserve">
+    <value>Logeerkamer</value>
+  </data>
+  <data name="&gt;&gt;LogeerkamerButton.Name" xml:space="preserve">
+    <value>LogeerkamerButton</value>
+  </data>
+  <data name="&gt;&gt;LogeerkamerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LogeerkamerButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LogeerkamerButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="KinderkamerButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="KinderkamerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="KinderkamerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>640, 28</value>
+  </data>
+  <data name="KinderkamerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 87</value>
+  </data>
+  <data name="KinderkamerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="KinderkamerButton.Text" xml:space="preserve">
+    <value>Kinderkamer</value>
+  </data>
+  <data name="&gt;&gt;KinderkamerButton.Name" xml:space="preserve">
+    <value>KinderkamerButton</value>
+  </data>
+  <data name="&gt;&gt;KinderkamerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KinderkamerButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;KinderkamerButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BadkamerButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BadkamerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BadkamerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 28</value>
+  </data>
+  <data name="BadkamerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 207</value>
+  </data>
+  <data name="BadkamerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="BadkamerButton.Text" xml:space="preserve">
+    <value>Badkamer</value>
+  </data>
+  <data name="&gt;&gt;BadkamerButton.Name" xml:space="preserve">
+    <value>BadkamerButton</value>
+  </data>
+  <data name="&gt;&gt;BadkamerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BadkamerButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BadkamerButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 499</value>
+    <value>984, 611</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -7626,11 +8151,17 @@
         AAAP/////+AAAAAf////4AAAABgAAA==
 </value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
     <value>335, 146</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Map</value>
