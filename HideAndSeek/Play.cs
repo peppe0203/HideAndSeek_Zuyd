@@ -47,6 +47,11 @@ namespace HideAndSeek
             if (_ticks == time)
             {
                 textBox1.Text = "Done";
+                textBox2.Text = "-";
+                radioButton1.Checked = true;
+                radioButton1.ForeColor = Color.Red;
+                radioButton1.Text = "Loser";
+                radioButton1.Location = new Point(550, 117);
                 timer1.Stop();
             }
         }
@@ -69,7 +74,7 @@ namespace HideAndSeek
                 Stream stream = response.GetResponseStream();
                 StreamReader reader = new StreamReader(stream);                
 
-                if (i == 0)
+                if ((i == 0) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -84,7 +89,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
                 
-                if (i == 1)
+                if ((i == 1) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -99,7 +104,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 2)
+                if ((i == 2) && (_ticks != time))
                 {
                     while (Count!= 12)
                     {
@@ -114,7 +119,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 3)
+                if ((i == 3) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -129,7 +134,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 4)
+                if ((i == 4) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -144,7 +149,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 5)
+                if ((i == 5) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -159,7 +164,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 6)
+                if ((i == 6) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -174,7 +179,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 7)
+                if ((i == 7) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -189,7 +194,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 8)
+                if ((i == 8) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -204,7 +209,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 9)
+                if ((i == 9) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -219,7 +224,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 10)
+                if ((i == 10) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -234,7 +239,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 11)
+                if ((i == 11) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -249,7 +254,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 12)
+                if ((i == 12) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -264,7 +269,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 13)
+                if ((i == 13) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -279,7 +284,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 14)
+                if ((i == 14) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -294,7 +299,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 15)
+                if ((i == 15) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
@@ -309,7 +314,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if (i == 16)
+                if ((i == 16) && (_ticks != time))
                 {
                     while (Count != 12)
                     {
