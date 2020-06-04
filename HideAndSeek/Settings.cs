@@ -13,6 +13,7 @@ namespace HideAndSeek
     public partial class Settings : Form
     {
         public static int time = 300;
+        public static bool Locate_hider = false;
 
         public Settings()
         {
@@ -22,7 +23,14 @@ namespace HideAndSeek
 
         private void Settings_Load(object sender, EventArgs e)
         {
-
+            if (Locate_hider == false)
+            {
+                button3.BackColor = Color.DarkGray;
+            }
+            else
+            {
+                button4.BackColor = Color.DarkGray;
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -45,6 +53,22 @@ namespace HideAndSeek
             time = int.Parse(textBox2.Text);
             string title = "Message";
             MessageBox.Show(message + " Hide" + "\n" + message2 + " Search", title);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Locate_hider = false;
+            button3.BackColor = Color.DarkGray;
+            button4.BackColor = Color.LightGray;
+            MessageBox.Show("Locate hider is turned Off", "Update");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Locate_hider = true;
+            button4.BackColor = Color.DarkGray;
+            button3.BackColor = Color.LightGray;
+            MessageBox.Show("Locate hider is turned On", "Update");
         }
     }
 }

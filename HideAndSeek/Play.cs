@@ -11,22 +11,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
+using System.Windows.Shapes;
 
 namespace HideAndSeek
 {
     public partial class Play : Form
-    {
+    {        
         private int _ticks;
         public int time = Settings.time;
-        public string IP = "127.0.0.1:8080";
+        public static string IP = "127.0.0.1:8080";
         public int Count = 0;
         public List<int> lights = new List<int>()
         { 40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56};
+        public bool Locate_hider = Settings.Locate_hider;
 
         public Play()
         {
             InitializeComponent();
             timer1.Start();
+            if (Locate_hider == false)
+            {
+                textBox2.Text = "-";
+            }
         }
 
         private void Play_Load(object sender, EventArgs e)
@@ -69,12 +75,12 @@ namespace HideAndSeek
             for (int i = 0; i < lights.Count; i++)
             {
                 HttpWebRequest request =
-               WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=" +lights[i] ) as HttpWebRequest;
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=" +lights[i] ) as HttpWebRequest;
                 HttpWebResponse response = request.GetResponse() as HttpWebResponse;
                 Stream stream = response.GetResponseStream();
                 StreamReader reader = new StreamReader(stream);                
 
-                if ((i == 0) && (_ticks != time))
+                if ((i == 0) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -89,7 +95,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
                 
-                if ((i == 1) && (_ticks != time))
+                if ((i == 1) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -104,7 +110,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 2) && (_ticks != time))
+                if ((i == 2) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count!= 12)
                     {
@@ -119,7 +125,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 3) && (_ticks != time))
+                if ((i == 3) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -134,7 +140,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 4) && (_ticks != time))
+                if ((i == 4) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -149,7 +155,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 5) && (_ticks != time))
+                if ((i == 5) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -164,7 +170,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 6) && (_ticks != time))
+                if ((i == 6) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -179,7 +185,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 7) && (_ticks != time))
+                if ((i == 7) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -194,7 +200,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 8) && (_ticks != time))
+                if ((i == 8) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -209,7 +215,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 9) && (_ticks != time))
+                if ((i == 9) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -224,7 +230,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 10) && (_ticks != time))
+                if ((i == 10) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -239,7 +245,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 11) && (_ticks != time))
+                if ((i == 11) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -254,7 +260,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 12) && (_ticks != time))
+                if ((i == 12) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -269,7 +275,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 13) && (_ticks != time))
+                if ((i == 13) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -284,7 +290,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 14) && (_ticks != time))
+                if ((i == 14) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -299,7 +305,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 15) && (_ticks != time))
+                if ((i == 15) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -314,7 +320,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 16) && (_ticks != time))
+                if ((i == 16) && (_ticks != time) && (Locate_hider == true))
                 {
                     while (Count != 12)
                     {
@@ -329,6 +335,12 @@ namespace HideAndSeek
                     Count = 0;
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            MessageBox.Show(Form1.message);
         }
     }
 }
