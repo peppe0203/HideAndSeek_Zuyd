@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>29</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -171,7 +171,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>28</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 6pt, style=Underline</value>
@@ -202,7 +202,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>27</value>
   </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 6pt, style=Underline</value>
@@ -232,7 +232,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>26</value>
   </data>
   <data name="textBox2.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -259,7 +259,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>25</value>
   </data>
   <data name="radioButton1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -274,7 +274,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>679, 198</value>
+    <value>517, 11</value>
   </data>
   <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 20</value>
@@ -298,7 +298,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>24</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3431,7 +3431,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>23</value>
   </data>
   <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 6pt, style=Underline</value>
@@ -3458,6 +3458,841 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="Zolderkamer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Zolderkamer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Zolderkamer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Zolderkamer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Zolderkamer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 284</value>
+  </data>
+  <data name="Zolderkamer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Zolderkamer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 134</value>
+  </data>
+  <data name="Zolderkamer.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="Zolderkamer.Text" xml:space="preserve">
+    <value>Zolderkamer</value>
+  </data>
+  <data name="&gt;&gt;Zolderkamer.Name" xml:space="preserve">
+    <value>Zolderkamer</value>
+  </data>
+  <data name="&gt;&gt;Zolderkamer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Zolderkamer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Zolderkamer.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="Berging1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Berging1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Berging1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Berging1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Berging1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 283</value>
+  </data>
+  <data name="Berging1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Berging1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 57</value>
+  </data>
+  <data name="Berging1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="Berging1.Text" xml:space="preserve">
+    <value>Berg-
+ing 1</value>
+  </data>
+  <data name="&gt;&gt;Berging1.Name" xml:space="preserve">
+    <value>Berging1</value>
+  </data>
+  <data name="&gt;&gt;Berging1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Berging1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Berging1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Berging2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Berging2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Berging2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Berging2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Berging2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 358</value>
+  </data>
+  <data name="Berging2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Berging2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 60</value>
+  </data>
+  <data name="Berging2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="Berging2.Text" xml:space="preserve">
+    <value>Berg-
+ing 2</value>
+  </data>
+  <data name="&gt;&gt;Berging2.Name" xml:space="preserve">
+    <value>Berging2</value>
+  </data>
+  <data name="&gt;&gt;Berging2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Berging2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Berging2.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="Badkamer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Badkamer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Badkamer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Badkamer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Badkamer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 65</value>
+  </data>
+  <data name="Badkamer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Badkamer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 137</value>
+  </data>
+  <data name="Badkamer.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="Badkamer.Text" xml:space="preserve">
+    <value>Badkamer</value>
+  </data>
+  <data name="&gt;&gt;Badkamer.Name" xml:space="preserve">
+    <value>Badkamer</value>
+  </data>
+  <data name="&gt;&gt;Badkamer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Badkamer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Badkamer.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="Logeerkamer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Logeerkamer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Logeerkamer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Logeerkamer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Logeerkamer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 66</value>
+  </data>
+  <data name="Logeerkamer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Logeerkamer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 57</value>
+  </data>
+  <data name="Logeerkamer.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="Logeerkamer.Text" xml:space="preserve">
+    <value>Logeer
+kamer</value>
+  </data>
+  <data name="&gt;&gt;Logeerkamer.Name" xml:space="preserve">
+    <value>Logeerkamer</value>
+  </data>
+  <data name="&gt;&gt;Logeerkamer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Logeerkamer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Logeerkamer.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="Kinderkamer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Kinderkamer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Kinderkamer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Kinderkamer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Kinderkamer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 66</value>
+  </data>
+  <data name="Kinderkamer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Kinderkamer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 57</value>
+  </data>
+  <data name="Kinderkamer.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="Kinderkamer.Text" xml:space="preserve">
+    <value>Kinder
+kamer</value>
+  </data>
+  <data name="&gt;&gt;Kinderkamer.Name" xml:space="preserve">
+    <value>Kinderkamer</value>
+  </data>
+  <data name="&gt;&gt;Kinderkamer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Kinderkamer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Kinderkamer.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="Slaapkamer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Slaapkamer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Slaapkamer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Slaapkamer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Slaapkamer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 142</value>
+  </data>
+  <data name="Slaapkamer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Slaapkamer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 61</value>
+  </data>
+  <data name="Slaapkamer.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="Slaapkamer.Text" xml:space="preserve">
+    <value>Slaapkamer</value>
+  </data>
+  <data name="&gt;&gt;Slaapkamer.Name" xml:space="preserve">
+    <value>Slaapkamer</value>
+  </data>
+  <data name="&gt;&gt;Slaapkamer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Slaapkamer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Slaapkamer.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Gastkamer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Gastkamer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Gastkamer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Gastkamer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Gastkamer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 284</value>
+  </data>
+  <data name="Gastkamer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Gastkamer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 134</value>
+  </data>
+  <data name="Gastkamer.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Gastkamer.Text" xml:space="preserve">
+    <value>Gastkamer</value>
+  </data>
+  <data name="&gt;&gt;Gastkamer.Name" xml:space="preserve">
+    <value>Gastkamer</value>
+  </data>
+  <data name="&gt;&gt;Gastkamer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Gastkamer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Gastkamer.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="button12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button12.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button12.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="button12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="button12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 283</value>
+  </data>
+  <data name="button12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 57</value>
+  </data>
+  <data name="button12.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;button12.Name" xml:space="preserve">
+    <value>button12</value>
+  </data>
+  <data name="&gt;&gt;button12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button12.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Controlroom.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Controlroom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Controlroom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 282</value>
+  </data>
+  <data name="Controlroom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 138</value>
+  </data>
+  <data name="Controlroom.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="Controlroom.Text" xml:space="preserve">
+    <value>Control
+room</value>
+  </data>
+  <data name="&gt;&gt;Controlroom.Name" xml:space="preserve">
+    <value>Controlroom</value>
+  </data>
+  <data name="&gt;&gt;Controlroom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Controlroom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Controlroom.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Halonder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Halonder.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Halonder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Halonder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Halonder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 283</value>
+  </data>
+  <data name="Halonder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Halonder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 137</value>
+  </data>
+  <data name="Halonder.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="Halonder.Text" xml:space="preserve">
+    <value>Hal</value>
+  </data>
+  <data name="&gt;&gt;Halonder.Name" xml:space="preserve">
+    <value>Halonder</value>
+  </data>
+  <data name="&gt;&gt;Halonder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Halonder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Halonder.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Garage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Garage.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Garage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Garage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Garage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 205</value>
+  </data>
+  <data name="Garage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Garage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 60</value>
+  </data>
+  <data name="Garage.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="Garage.Text" xml:space="preserve">
+    <value>Garage</value>
+  </data>
+  <data name="&gt;&gt;Garage.Name" xml:space="preserve">
+    <value>Garage</value>
+  </data>
+  <data name="&gt;&gt;Garage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Garage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Garage.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Keuken.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Keuken.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Keuken.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Keuken.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Keuken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 142</value>
+  </data>
+  <data name="Keuken.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Keuken.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 60</value>
+  </data>
+  <data name="Keuken.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="Keuken.Text" xml:space="preserve">
+    <value>Keuken</value>
+  </data>
+  <data name="&gt;&gt;Keuken.Name" xml:space="preserve">
+    <value>Keuken</value>
+  </data>
+  <data name="&gt;&gt;Keuken.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Keuken.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Keuken.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Eetkamer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Eetkamer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Eetkamer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Eetkamer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Eetkamer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 66</value>
+  </data>
+  <data name="Eetkamer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Eetkamer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 71</value>
+  </data>
+  <data name="Eetkamer.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="Eetkamer.Text" xml:space="preserve">
+    <value>Eetkamer</value>
+  </data>
+  <data name="&gt;&gt;Eetkamer.Name" xml:space="preserve">
+    <value>Eetkamer</value>
+  </data>
+  <data name="&gt;&gt;Eetkamer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Eetkamer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Eetkamer.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Woonkamer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Woonkamer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Woonkamer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Woonkamer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Woonkamer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 66</value>
+  </data>
+  <data name="Woonkamer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Woonkamer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 71</value>
+  </data>
+  <data name="Woonkamer.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="Woonkamer.Text" xml:space="preserve">
+    <value>Woonkamer</value>
+  </data>
+  <data name="&gt;&gt;Woonkamer.Name" xml:space="preserve">
+    <value>Woonkamer</value>
+  </data>
+  <data name="&gt;&gt;Woonkamer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Woonkamer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Woonkamer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Wc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Wc.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Wc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Wc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Wc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 142</value>
+  </data>
+  <data name="Wc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Wc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 46</value>
+  </data>
+  <data name="Wc.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="Wc.Text" xml:space="preserve">
+    <value>Wc</value>
+  </data>
+  <data name="&gt;&gt;Wc.Name" xml:space="preserve">
+    <value>Wc</value>
+  </data>
+  <data name="&gt;&gt;Wc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Wc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Wc.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Hal1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Hal1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Hal1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Hal1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Hal1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 140</value>
+  </data>
+  <data name="Hal1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Hal1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 62</value>
+  </data>
+  <data name="Hal1.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="Hal1.Text" xml:space="preserve">
+    <value>H
+a
+l</value>
+  </data>
+  <data name="&gt;&gt;Hal1.Name" xml:space="preserve">
+    <value>Hal1</value>
+  </data>
+  <data name="&gt;&gt;Hal1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Hal1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Hal1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Hal2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Hal2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Hal2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Hal2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Hal2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 190</value>
+  </data>
+  <data name="Hal2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Hal2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 12</value>
+  </data>
+  <data name="Hal2.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;Hal2.Name" xml:space="preserve">
+    <value>Hal2</value>
+  </data>
+  <data name="&gt;&gt;Hal2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Hal2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Hal2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Halboven2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Halboven2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Halboven2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 4.8pt</value>
+  </data>
+  <data name="Halboven2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Halboven2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 125</value>
+  </data>
+  <data name="Halboven2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Halboven2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 14</value>
+  </data>
+  <data name="Halboven2.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="Halboven2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Halboven2.Name" xml:space="preserve">
+    <value>Halboven2</value>
+  </data>
+  <data name="&gt;&gt;Halboven2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Halboven2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Halboven2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Halboven1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Halboven1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Halboven1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 6pt</value>
+  </data>
+  <data name="Halboven1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Halboven1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 138</value>
+  </data>
+  <data name="Halboven1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Halboven1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 61</value>
+  </data>
+  <data name="Halboven1.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="Halboven1.Text" xml:space="preserve">
+    <value>Hal</value>
+  </data>
+  <data name="Halboven1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Halboven1.Name" xml:space="preserve">
+    <value>Halboven1</value>
+  </data>
+  <data name="&gt;&gt;Halboven1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Halboven1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Halboven1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBox3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.20000029pt</value>
+  </data>
+  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>709, 270</value>
+  </data>
+  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 21</value>
+  </data>
+  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
+    <value>textBox3</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>612, 272</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 17</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Your location:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -3466,9 +4301,6 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>49</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>

@@ -24,6 +24,9 @@ namespace HideAndSeek
         public List<int> lights = new List<int>()
         { 40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56};
         public bool Locate_hider = Settings.Locate_hider;
+        public string Location = "Hal";
+        public bool plays = true;
+        public bool Win = false;
 
         public Play()
         {
@@ -33,11 +36,11 @@ namespace HideAndSeek
             {
                 textBox2.Text = "-";
             }
+            textBox3.Text = Location;
         }
 
         private void Play_Load(object sender, EventArgs e)
-        {
-
+        {            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -50,14 +53,24 @@ namespace HideAndSeek
             _ticks++;
             textBox1.Text = _ticks.ToString();
 
-            if (_ticks == time)
+            if (_ticks >= time || Win==true)
             {
                 textBox1.Text = "Done";
                 textBox2.Text = "-";
+                plays = false;
+
                 radioButton1.Checked = true;
-                radioButton1.ForeColor = Color.Red;
-                radioButton1.Text = "Loser";
-                radioButton1.Location = new Point(550, 117);
+
+                if (Win == false)
+                {
+                    radioButton1.ForeColor = Color.Red;
+                    radioButton1.Text = "Loser";
+                }
+                if (Win == true)
+                {
+                    radioButton1.ForeColor = Color.Green;
+                    radioButton1.Text = "Winner";
+                }
                 timer1.Stop();
             }
         }
@@ -341,6 +354,706 @@ namespace HideAndSeek
         {
             
             MessageBox.Show(Form1.message);
+        }
+       
+        private void Berging1_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Zolderkamer") && (plays == true))
+            {
+                Location = "Berging 1";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=55") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Berging1.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Berging1.BackColor = Color.Red;
+                }
+                Zolderkamer.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }   
+        }
+
+        private void Berging2_Click(object sender, EventArgs e)
+        {
+            if (Location == "Zolderkamer" && plays == true)
+            {
+                Location = "Berging 2";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=56") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Berging2.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Berging2.BackColor = Color.Red;
+                }
+
+                Zolderkamer.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }            
+        }
+
+        private void Zolderkamer_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Berging 1" || Location == "Berging 2" || Location == "Halboven") && (plays == true))
+            {
+                Location = "Zolderkamer";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=54") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Zolderkamer.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Zolderkamer.BackColor = Color.Red;
+                }
+
+                Berging1.BackColor = Color.LightGray;
+                Berging2.BackColor = Color.LightGray;
+                Halboven1.BackColor = Color.LightGray;
+                Halboven2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }            
+        }
+
+        private void Slaapkamer_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Halboven") && (plays == true))
+            {
+                Location = "Slaapkamer";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=50") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Slaapkamer.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Slaapkamer.BackColor = Color.Red;
+                }
+
+                Halboven1.BackColor = Color.LightGray;
+                Halboven2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+                
+        }
+
+        private void Kinderkamer_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Halboven") && (plays == true))
+            {
+                Location = "Kinderkamer";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=51") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Kinderkamer.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Kinderkamer.BackColor = Color.Red;
+                }
+
+                Halboven1.BackColor = Color.LightGray;
+                Halboven2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+                
+        }
+
+        private void Logeerkamer_Click(object sender, EventArgs e)
+        {            
+            if ((Location == "Halboven") && (plays == true))
+            {
+                Location = "Logeerkamer";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=52") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Logeerkamer.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Logeerkamer.BackColor = Color.Red;
+                }
+
+                Halboven1.BackColor = Color.LightGray;
+                Halboven2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Badkamer_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Halboven") && (plays == true))
+            {
+                Location = "Badkamer";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=53") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Badkamer.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Badkamer.BackColor = Color.Red;
+                }
+
+                Halboven1.BackColor = Color.LightGray;
+                Halboven2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Halboven1_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Kinderkamer" || Location == "Slaapkamer" || Location == "Zolderkamer" || Location == "Logeerkamer" || Location == "Badkamer" || Location == "Hal") && (plays == true))
+            {
+                Location = "Halboven";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=49") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Halboven1.BackColor = Color.Green;
+                        Halboven2.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Halboven1.BackColor = Color.Red;
+                    Halboven2.BackColor = Color.Red;
+                }
+
+                Kinderkamer.BackColor = Color.LightGray;
+                Slaapkamer.BackColor = Color.LightGray;
+                Zolderkamer.BackColor = Color.LightGray;
+                Logeerkamer.BackColor = Color.LightGray;
+                Badkamer.BackColor = Color.LightGray;
+                Hal1.BackColor = Color.LightGray;
+                Hal2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+                
+        }
+
+        private void Halboven2_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Kinderkamer" || Location == "Slaapkamer" || Location == "Zolderkamer" || Location == "Logeerkamer" || Location == "Badkamer" || Location == "Hal") && (plays == true))
+            {
+                Location = "Halboven";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=49") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Halboven1.BackColor = Color.Green;
+                        Halboven2.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Halboven1.BackColor = Color.Red;
+                    Halboven2.BackColor = Color.Red;
+                }
+
+                Kinderkamer.BackColor = Color.LightGray;
+                Slaapkamer.BackColor = Color.LightGray;
+                Zolderkamer.BackColor = Color.LightGray;
+                Logeerkamer.BackColor = Color.LightGray;
+                Badkamer.BackColor = Color.LightGray;
+                Hal1.BackColor = Color.LightGray;
+                Hal2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Woonkamer_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Eetkamer" || Location == "Hal") && (plays == true))
+            {
+                Location = "Woonkamer";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=47") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Woonkamer.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Woonkamer.BackColor = Color.Red;
+                }
+
+                Eetkamer.BackColor = Color.LightGray;
+                Hal1.BackColor = Color.LightGray;
+                Hal2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Eetkamer_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Woonkamer" || Location == "Keuken") && (plays == true))
+            {
+                Location = "Eetkamer";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=46") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Eetkamer.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Eetkamer.BackColor = Color.Red;
+                }
+
+                Woonkamer.BackColor = Color.LightGray;
+                Keuken.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Keuken_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Eetkamer" || Location == "Hal") && (plays == true))
+            {
+                Location = "Keuken";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=45") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Keuken.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Keuken.BackColor = Color.Red;
+                }
+
+                Eetkamer.BackColor = Color.LightGray;
+                Hal1.BackColor = Color.LightGray;
+                Hal2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Garage_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Hal") && (plays == true))
+            {
+                Location = "Garage";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=44") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Garage.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Garage.BackColor = Color.Red;
+                }
+
+                Hal1.BackColor = Color.LightGray;
+                Hal2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Wc_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Hal") && (plays == true))
+            {
+                Location = "Wc";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=48") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Wc.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Wc.BackColor = Color.Red;
+                }
+
+                Hal1.BackColor = Color.LightGray;
+                Hal2.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Hal1_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Keuken" || Location == "Halboven" || Location == "Woonkamer" || Location == "Wc" || Location == "Garage" || Location == "Halkelder") && (plays == true))
+            {
+                Location = "Hal";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=43") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Hal1.BackColor = Color.Green;
+                        Hal2.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Hal1.BackColor = Color.Red;
+                    Hal2.BackColor = Color.Red;
+                }
+
+                Keuken.BackColor = Color.LightGray;
+                Halboven1.BackColor = Color.LightGray;
+                Halboven2.BackColor = Color.LightGray;
+                Woonkamer.BackColor = Color.LightGray;
+                Wc.BackColor = Color.LightGray;
+                Garage.BackColor = Color.LightGray;
+                Halonder.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Hal2_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Keuken" || Location == "Halboven" || Location == "Woonkamer" || Location == "Wc" || Location == "Garage" || Location == "Halkelder") && (plays == true))
+            {
+                Location = "Hal";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=43") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Hal1.BackColor = Color.Green;
+                        Hal2.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Hal1.BackColor = Color.Red;
+                    Hal2.BackColor = Color.Red;
+                }
+
+                Keuken.BackColor = Color.LightGray;
+                Halboven1.BackColor = Color.LightGray;
+                Halboven2.BackColor = Color.LightGray;
+                Woonkamer.BackColor = Color.LightGray;
+                Wc.BackColor = Color.LightGray;
+                Garage.BackColor = Color.LightGray;
+                Halonder.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Gastkamer_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Halkelder") && (plays == true))
+            {
+                Location = "Gastkamer";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=40") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Gastkamer.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Gastkamer.BackColor = Color.Red;
+                }
+
+                Halonder.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Halonder_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Gastkamer" || Location == "Controlroom" || Location == "Hal") && (plays == true))
+            {
+                Location = "Halkelder";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=42") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Halonder.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Halonder.BackColor = Color.Red;
+                }
+
+                Hal1.BackColor = Color.LightGray;
+                Hal2.BackColor = Color.LightGray;
+                Gastkamer.BackColor = Color.LightGray;
+                Controlroom.BackColor = Color.LightGray;
+                button12.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
+        }
+
+        private void Controlroom_Click(object sender, EventArgs e)
+        {
+            if ((Location == "Halkelder") && (plays == true))
+            {
+                Location = "Controlroom";
+                textBox3.Text = Location;
+
+                HttpWebRequest request =
+                    WebRequest.Create("http://" + IP + "/json.htm?type=lightlog&idx=41") as HttpWebRequest;
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+                while (Count != 12)
+                {
+                    string text = reader.ReadLine();
+                    if (text.Contains(@"""Status"" : ""On"""))
+                    {
+                        Controlroom.BackColor = Color.Green;
+                        button12.BackColor = Color.Green;
+                        Win = true;
+                    }
+                    Count = Count + 1;
+                }
+                response.Close();
+                if (Win == false)
+                {
+                    Controlroom.BackColor = Color.Red;
+                    button12.BackColor = Color.Red;
+                }
+
+                Halonder.BackColor = Color.LightGray;
+                _ticks += Settings.Penalty;
+                Count = 0;
+            }
         }
     }
 }

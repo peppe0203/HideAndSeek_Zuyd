@@ -14,11 +14,13 @@ namespace HideAndSeek
     {
         public static int time = 300;
         public static bool Locate_hider = false;
+        public static int Penalty = 5;
 
         public Settings()
         {
             InitializeComponent();
             textBox2.Text = time.ToString();
+            textBox3.Text = Penalty.ToString();
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -50,9 +52,11 @@ namespace HideAndSeek
         {
             string message = textBox1.Text;
             string message2 = textBox2.Text;
+            string message3 = textBox3.Text;
             time = int.Parse(textBox2.Text);
+            Penalty = int.Parse(textBox3.Text);
             string title = "Message";
-            MessageBox.Show(message + " Hide" + "\n" + message2 + " Search", title);
+            MessageBox.Show(message + " Hide" + "\n" + message2 + " Search" + "\n\n" + message3 + " Penalty" , title);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -69,6 +73,11 @@ namespace HideAndSeek
             button4.BackColor = Color.DarkGray;
             button3.BackColor = Color.LightGray;
             MessageBox.Show("Locate hider is turned On", "Update");
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
