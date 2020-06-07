@@ -90,7 +90,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(568, 290);
+            this.label2.Location = new System.Drawing.Point(558, 292);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(230, 28);
             this.label2.TabIndex = 8;
@@ -114,7 +114,7 @@
             this.button1.BackgroundImage = global::HideAndSeek.Properties.Resources.refresh_512;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(515, 284);
+            this.button1.Location = new System.Drawing.Point(502, 284);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(41, 39);
             this.button1.TabIndex = 7;
