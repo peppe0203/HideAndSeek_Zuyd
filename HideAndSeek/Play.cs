@@ -31,6 +31,7 @@ namespace HideAndSeek
         public Play()
         {
             InitializeComponent();
+            textBox4.ReadOnly = true;
             timer1.Start();
             if (Locate_hider == false)
             {
@@ -59,17 +60,17 @@ namespace HideAndSeek
                 textBox2.Text = "-";
                 plays = false;
 
-                radioButton1.Checked = true;
-
                 if (Win == false)
                 {
-                    radioButton1.ForeColor = Color.Red;
-                    radioButton1.Text = "Loser";
+                    textBox4.ForeColor = Color.Red;
+                    textBox4.BackColor = Color.White;
+                    textBox4.Text = "Loser";
                 }
                 if (Win == true)
                 {
-                    radioButton1.ForeColor = Color.Green;
-                    radioButton1.Text = "Winner";
+                    textBox4.ForeColor = Color.Green;
+                    textBox4.BackColor = Color.White;
+                    textBox4.Text = "Winner";
                 }
                 timer1.Stop();
             }
@@ -93,14 +94,14 @@ namespace HideAndSeek
                 Stream stream = response.GetResponseStream();
                 StreamReader reader = new StreamReader(stream);                
 
-                if ((i == 0) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 0) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
                         string text = reader.ReadLine();
                         if (text.Contains(@"""Status"" : ""On""") && (i == 0))
                         {
-                            textBox2.Text = "Gaskamer";
+                            textBox2.Text = "Gastkamer";
                         }
                         Count = Count + 1;
                     }
@@ -108,7 +109,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
                 
-                if ((i == 1) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 1) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -123,7 +124,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 2) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 2) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count!= 12)
                     {
@@ -138,7 +139,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 3) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 3) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -153,7 +154,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 4) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 4) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -168,7 +169,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 5) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 5) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -183,7 +184,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 6) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 6) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -198,7 +199,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 7) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 7) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -213,7 +214,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 8) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 8) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -228,7 +229,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 9) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 9) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -243,7 +244,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 10) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 10) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -258,7 +259,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 11) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 11) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -273,7 +274,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 12) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 12) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -288,7 +289,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 13) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 13) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -303,7 +304,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 14) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 14) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -318,7 +319,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 15) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 15) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -333,7 +334,7 @@ namespace HideAndSeek
                     Count = 0;
                 }
 
-                if ((i == 16) && (_ticks != time) && (Locate_hider == true))
+                if ((i == 16) && (_ticks != time) && (Locate_hider == true) && (!plays == false))
                 {
                     while (Count != 12)
                     {
@@ -381,7 +382,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Berging1.BackColor = Color.Red;
+                    if (Form1.message.Contains("Berging 1"))
+                    {
+                        Berging1.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Berging1.BackColor = Color.Red;
+                    }                
                 }
                 Zolderkamer.BackColor = Color.LightGray;
                 _ticks += Settings.Penalty;
@@ -414,7 +422,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Berging2.BackColor = Color.Red;
+                    if (Form1.message.Contains("Berging 2"))
+                    {
+                        Berging2.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Berging2.BackColor = Color.Red;
+                    }
                 }
 
                 Zolderkamer.BackColor = Color.LightGray;
@@ -448,7 +463,15 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Zolderkamer.BackColor = Color.Red;
+                    if (Form1.message.Contains("Zolderkamer"))
+                    {
+                        Zolderkamer.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Zolderkamer.BackColor = Color.Red;
+                    }
+                    
                 }
 
                 Berging1.BackColor = Color.LightGray;
@@ -485,7 +508,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Slaapkamer.BackColor = Color.Red;
+                    if (Form1.message.Contains("Slaapkamer"))
+                    {
+                        Slaapkamer.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Slaapkamer.BackColor = Color.Red;
+                    }                    
                 }
 
                 Halboven1.BackColor = Color.LightGray;
@@ -521,7 +551,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Kinderkamer.BackColor = Color.Red;
+                    if (Form1.message.Contains("Kinderkamer"))
+                    {
+                        Kinderkamer.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Kinderkamer.BackColor = Color.Red;
+                    }
                 }
 
                 Halboven1.BackColor = Color.LightGray;
@@ -557,7 +594,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Logeerkamer.BackColor = Color.Red;
+                    if (Form1.message.Contains("Logeerkamer"))
+                    {
+                        Logeerkamer.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Logeerkamer.BackColor = Color.Red;
+                    }
                 }
 
                 Halboven1.BackColor = Color.LightGray;
@@ -592,7 +636,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Badkamer.BackColor = Color.Red;
+                    if (Form1.message.Contains("Badkamer"))
+                    {
+                        Badkamer.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Badkamer.BackColor = Color.Red;
+                    }
                 }
 
                 Halboven1.BackColor = Color.LightGray;
@@ -628,8 +679,16 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Halboven1.BackColor = Color.Red;
-                    Halboven2.BackColor = Color.Red;
+                    if (Form1.message.Contains("Halboven"))
+                    {
+                        Halboven1.BackColor = Color.Yellow;
+                        Halboven2.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Halboven1.BackColor = Color.Red;
+                        Halboven2.BackColor = Color.Red;
+                    }
                 }
 
                 Kinderkamer.BackColor = Color.LightGray;
@@ -671,8 +730,16 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Halboven1.BackColor = Color.Red;
-                    Halboven2.BackColor = Color.Red;
+                    if (Form1.message.Contains("Halboven"))
+                    {
+                        Halboven1.BackColor = Color.Yellow;
+                        Halboven2.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Halboven1.BackColor = Color.Red;
+                        Halboven2.BackColor = Color.Red;
+                    }
                 }
 
                 Kinderkamer.BackColor = Color.LightGray;
@@ -712,7 +779,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Woonkamer.BackColor = Color.Red;
+                    if (Form1.message.Contains("Woonkamer"))
+                    {
+                        Woonkamer.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Woonkamer.BackColor = Color.Red;
+                    }
                 }
 
                 Eetkamer.BackColor = Color.LightGray;
@@ -748,7 +822,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Eetkamer.BackColor = Color.Red;
+                    if (Form1.message.Contains("Eetkamer"))
+                    {
+                        Eetkamer.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Eetkamer.BackColor = Color.Red;
+                    }
                 }
 
                 Woonkamer.BackColor = Color.LightGray;
@@ -783,7 +864,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Keuken.BackColor = Color.Red;
+                    if (Form1.message.Contains("Keuken"))
+                    {
+                        Keuken.BackColor = Color.Yellow;
+                    }    
+                    else
+                    {
+                        Keuken.BackColor = Color.Red;
+                    }
                 }
 
                 Eetkamer.BackColor = Color.LightGray;
@@ -819,9 +907,15 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Garage.BackColor = Color.Red;
+                    if (Form1.message.Contains("Garage"))
+                    {
+                        Garage.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Garage.BackColor = Color.Red;
+                    }
                 }
-
                 Hal1.BackColor = Color.LightGray;
                 Hal2.BackColor = Color.LightGray;
                 _ticks += Settings.Penalty;
@@ -854,7 +948,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Wc.BackColor = Color.Red;
+                    if (Form1.message.Contains("Wc"))
+                    {
+                        Wc.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Wc.BackColor = Color.Red;
+                    }                    
                 }
 
                 Hal1.BackColor = Color.LightGray;
@@ -890,8 +991,16 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Hal1.BackColor = Color.Red;
-                    Hal2.BackColor = Color.Red;
+                    if (Form1.message.Contains("Hal"))
+                    {
+                        Hal1.BackColor = Color.Yellow;
+                        Hal2.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Hal1.BackColor = Color.Red;
+                        Hal2.BackColor = Color.Red;
+                    }    
                 }
 
                 Keuken.BackColor = Color.LightGray;
@@ -932,8 +1041,16 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Hal1.BackColor = Color.Red;
-                    Hal2.BackColor = Color.Red;
+                    if (Form1.message.Contains("Hal"))
+                    {
+                        Hal1.BackColor = Color.Yellow;
+                        Hal2.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Hal1.BackColor = Color.Red;
+                        Hal2.BackColor = Color.Red;
+                    }
                 }
 
                 Keuken.BackColor = Color.LightGray;
@@ -973,7 +1090,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Gastkamer.BackColor = Color.Red;
+                    if (Form1.message.Contains("Gaskamer"))
+                    {
+                        Gastkamer.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Gastkamer.BackColor = Color.Red;
+                    }      
                 }
 
                 Halonder.BackColor = Color.LightGray;
@@ -1007,7 +1131,14 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Halonder.BackColor = Color.Red;
+                    if (Form1.message.Contains("Halkelder"))
+                    {
+                        Halonder.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        Halonder.BackColor = Color.Red;
+                    }
                 }
 
                 Hal1.BackColor = Color.LightGray;
@@ -1021,6 +1152,7 @@ namespace HideAndSeek
         }
 
         private void Controlroom_Click(object sender, EventArgs e)
+
         {
             if ((Location == "Halkelder") && (plays == true))
             {
@@ -1046,14 +1178,27 @@ namespace HideAndSeek
                 response.Close();
                 if (Win == false)
                 {
-                    Controlroom.BackColor = Color.Red;
-                    button12.BackColor = Color.Red;
+                    if (Form1.message.Contains("Controlroom"))
+                    {
+                        Controlroom.BackColor = Color.Yellow;
+                        button12.BackColor = Color.Yellow;
+                    }    
+                    else
+                    {
+                        Controlroom.BackColor = Color.Red;
+                        button12.BackColor = Color.Red;
+                    }                    
                 }
 
                 Halonder.BackColor = Color.LightGray;
                 _ticks += Settings.Penalty;
                 Count = 0;
             }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

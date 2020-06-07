@@ -36,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,11 +77,11 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(335, 284);
+            this.button4.Location = new System.Drawing.Point(401, 284);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(132, 40);
+            this.button4.Size = new System.Drawing.Size(85, 40);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Play";
+            this.button4.Text = "Search";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -100,7 +101,7 @@
             this.button1.BackgroundImage = global::HideAndSeek.Properties.Resources.refresh_512;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(488, 284);
+            this.button1.Location = new System.Drawing.Point(515, 284);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(41, 39);
             this.button1.TabIndex = 7;
@@ -112,13 +113,23 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(551, 290);
+            this.label2.Location = new System.Drawing.Point(568, 290);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(221, 32);
+            this.label2.Size = new System.Drawing.Size(230, 28);
             this.label2.TabIndex = 8;
-            this.label2.Text = "If the hider is busy, you \r\nneed to press te refresh button\r\n";
+            this.label2.Text = "Before the game starts, \r\nyou have to press the refresh button";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(310, 284);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(85, 40);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "Hide";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -126,6 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 499);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -153,6 +165,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button5;
     }
 }
 
