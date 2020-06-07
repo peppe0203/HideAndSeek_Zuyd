@@ -96,6 +96,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(494, 397);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 46);
@@ -106,6 +107,7 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(148, 397);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 46);
@@ -117,18 +119,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(639, 102);
+            this.label4.Font = new System.Drawing.Font("Verdana", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(639, 103);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 17);
+            this.label4.Size = new System.Drawing.Size(64, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Seconds";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(639, 187);
+            this.label5.Font = new System.Drawing.Font("Verdana", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(639, 188);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 17);
+            this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "Seconds";
             // 
@@ -144,6 +148,7 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Verdana", 7.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(428, 311);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(86, 34);
@@ -154,6 +159,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Verdana", 7.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(568, 311);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(86, 34);
@@ -175,7 +181,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(427, 253);
+            this.textBox3.Location = new System.Drawing.Point(428, 253);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(181, 22);
             this.textBox3.TabIndex = 13;
@@ -184,9 +190,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(639, 255);
+            this.label8.Font = new System.Drawing.Font("Verdana", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(639, 257);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 17);
+            this.label8.Size = new System.Drawing.Size(64, 16);
             this.label8.TabIndex = 14;
             this.label8.Text = "Seconds";
             // 

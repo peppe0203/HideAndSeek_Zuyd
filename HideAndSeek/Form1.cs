@@ -159,5 +159,12 @@ namespace HideAndSeek
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var Hide = new Hide();
+            Hide.Show();
+            this.Hide();
+        }
     }
 }

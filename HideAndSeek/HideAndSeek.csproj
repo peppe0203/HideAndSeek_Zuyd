@@ -53,6 +53,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hide.Designer.cs">
+      <DependentUpon>Hide.cs</DependentUpon>
+    </Compile>
     <Compile Include="Map.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hide.resx">
+      <DependentUpon>Hide.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Map.resx">
       <DependentUpon>Map.cs</DependentUpon>
@@ -110,6 +119,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\refresh-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Route_long.jpg" />
+    <Content Include="Resources\Route_medium.jpg" />
+    <Content Include="Resources\Route_short.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

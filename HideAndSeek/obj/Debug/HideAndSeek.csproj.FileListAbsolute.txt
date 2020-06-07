@@ -22,3 +22,4 @@ C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.csproj.CoreCompileInputs.ca
 C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.exe
 C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.pdb
 C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.Play.resources
+C:\Github\DEV_Zuyd\HideAndSeek\obj\Debug\HideAndSeek.Hide.resources

@@ -27,6 +27,7 @@ namespace HideAndSeek
         public string Location = "Hal";
         public bool plays = true;
         public bool Win = false;
+        
 
         public Play()
         {
@@ -353,8 +354,14 @@ namespace HideAndSeek
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-            MessageBox.Show(Form1.message);
+            if (plays == true)
+            {
+                MessageBox.Show(Form1.message);
+            }
+            else
+            {
+                MessageBox.Show("Game ended", "Message");
+            }
         }
        
         private void Berging1_Click(object sender, EventArgs e)
