@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,11 +14,14 @@ namespace HideAndSeek
 {
     public partial class Hide : Form
     {
+        ThreadingClass tc = new ThreadingClass(0);
+        public int data1;
+        public int data2;
+
         public Hide()
         {
             InitializeComponent();
-            textBox1.ReadOnly = true;
-            progressBar1.Step = 1;            
+            textBox1.ReadOnly = true;         
         }
 
         private void Hide_Load(object sender, EventArgs e)
@@ -56,60 +60,44 @@ namespace HideAndSeek
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button3_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "Short")
-            {
-                HttpWebRequest request =
-                    WebRequest.Create("http://"+ Play.IP +"/json.htm?type=command&param=switchscene&idx=7&switchcmd=On") as HttpWebRequest;
-                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-                response.Close();
-                progressBar1.Maximum = 10;
-                progressBar1.PerformStep();
-                this.timer1.Start();
-                comboBox1.Enabled = false;
-                Map_loader.Enabled = false;
-                button2.Enabled = false;
-            }
-            if (comboBox1.Text == "Medium")
-            {
-                HttpWebRequest request =
-                    WebRequest.Create("http://" + Play.IP + "/json.htm?type=command&param=switchscene&idx=6&switchcmd=On") as HttpWebRequest;
-                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-                response.Close();
-                progressBar1.Maximum = 15;
-                progressBar1.PerformStep();
-                this.timer1.Start();
-                comboBox1.Enabled = false;
-                Map_loader.Enabled = false;
-                button2.Enabled = false;
-            }
-            if (comboBox1.Text == "Long")
-            {
-                HttpWebRequest request =
-                    WebRequest.Create("http://"+Play.IP + "/json.htm?type=command&param=switchscene&idx=8&switchcmd=On") as HttpWebRequest;
-                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-                response.Close();
-                progressBar1.Maximum = 20;
-                progressBar1.PerformStep();
-                this.timer1.Start();
-                comboBox1.Enabled = false;
-                Map_loader.Enabled = false;
-                button2.Enabled = false;
-            }
             if ((comboBox1.Text != "Long") && (comboBox1.Text != "Medium") && (comboBox1.Text != "Short"))
             {
-                MessageBox.Show("Choose route","Message");
-            }           
-        }
+                MessageBox.Show("Choose route", "Message");
+            }
+            else
+            {                
+                if (comboBox1.Text == "Short")
+                {
+                    Thread t1 = new Thread(tc.WaitThread);
+                    t1.Start(10);
+                    Thread t2 = new Thread(tc.DomThread);
+                    t2.Start(0);
+                    t1.Join();
+                    t2.Join();
+                }
+                if (comboBox1.Text == "Medium")
+                {
+                    Thread t1 = new Thread(tc.WaitThread);
+                    t1.Start(15);
+                    Thread t2 = new Thread(tc.DomThread);
+                    t2.Start(1);
+                    t1.Join();
+                    t2.Join();
+                }
+                if (comboBox1.Text == "Long")
+                {
+                    Thread t1 = new Thread(tc.WaitThread);
+                    t1.Start(20);
+                    Thread t2 = new Thread(tc.DomThread);
+                    t2.Start(2);
+                    t1.Join();
+                    t2.Join();
+                }
+                MessageBox.Show("All threads are ready");
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            progressBar1.PerformStep();
-            if (progressBar1.Value == progressBar1.Maximum)
-            {
-                this.timer1.Stop();
-                MessageBox.Show(comboBox1.Text + " route has been walked");
                 this.Hide();
                 var Form1 = new Form1();
                 Form1.Show();
