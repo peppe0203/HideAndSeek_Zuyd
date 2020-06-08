@@ -14,6 +14,7 @@ namespace HideAndSeek
     {
         public static int time = 300;
         public static bool Locate_hider = false;
+        public static bool Route_message = false;
         public static int Penalty = 5;
 
         public Settings()
@@ -33,6 +34,14 @@ namespace HideAndSeek
             {
                 button4.BackColor = Color.DarkGray;
             }
+            if (Route_message == false)
+            {
+                button5.BackColor = Color.DarkGray;
+            }
+            else
+            {
+                button6.BackColor = Color.DarkGray;
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -50,13 +59,12 @@ namespace HideAndSeek
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string message = textBox1.Text;
             string message2 = textBox2.Text;
             string message3 = textBox3.Text;
             time = int.Parse(textBox2.Text);
             Penalty = int.Parse(textBox3.Text);
             string title = "Message";
-            MessageBox.Show(message + " Hide" + "\n" + message2 + " Search" + "\n\n" + message3 + " Penalty" , title);
+            MessageBox.Show(message2 + " Search" + "\n\n" + message3 + " Penalty" , title);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -78,6 +86,22 @@ namespace HideAndSeek
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Route_message = false;
+            button5.BackColor = Color.DarkGray;
+            button6.BackColor = Color.LightGray;
+            MessageBox.Show("Route message is turned Off", "Update");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Route_message = true;
+            button6.BackColor = Color.DarkGray;
+            button5.BackColor = Color.LightGray;
+            MessageBox.Show("Route message is turned On", "Update");
         }
     }
 }

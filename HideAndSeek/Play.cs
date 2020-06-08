@@ -354,13 +354,17 @@ namespace HideAndSeek
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (plays == true)
+            if ((plays == true) && (Settings.Route_message == true))
             {
                 MessageBox.Show(Form1.message);
             }
-            else
+            if ((plays == false))
             {
                 MessageBox.Show("Game ended", "Message");
+            }
+            if ((plays == true) && (Settings.Route_message == false))
+            {
+                MessageBox.Show("Route message is turned off", "Message");
             }
         }
        
