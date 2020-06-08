@@ -3314,10 +3314,10 @@
     <value>NoControl</value>
   </data>
   <data name="Map_loader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>585, 27</value>
+    <value>573, 27</value>
   </data>
   <data name="Map_loader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 36</value>
+    <value>111, 36</value>
   </data>
   <data name="Map_loader.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>

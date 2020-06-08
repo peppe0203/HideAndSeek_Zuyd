@@ -60,7 +60,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(142, 101);
+            this.label3.Location = new System.Drawing.Point(90, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(187, 34);
             this.label3.TabIndex = 2;
@@ -89,7 +89,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(148, 422);
+            this.button2.Location = new System.Drawing.Point(96, 422);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 46);
             this.button2.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(142, 246);
+            this.label6.Location = new System.Drawing.Point(90, 246);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(191, 34);
             this.label6.TabIndex = 9;
@@ -143,7 +143,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(142, 169);
+            this.label7.Location = new System.Drawing.Point(90, 169);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(210, 34);
             this.label7.TabIndex = 12;
@@ -172,7 +172,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(142, 323);
+            this.label9.Location = new System.Drawing.Point(90, 323);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(231, 34);
             this.label9.TabIndex = 15;
